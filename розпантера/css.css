@@ -1,0 +1,157 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  background-color: #FD88BC;
+  display: flex;
+  padding-top: 100px;
+  padding-left: 250px;
+  padding-right: 170px;
+}
+
+.date {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.date-begin {
+  width: 222px;
+  height: 66px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 12px;
+  transform: rotate(5deg);
+}
+
+.date-end {
+  width: 222px;
+  height: 66px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 12px;
+  transform: rotate(-5deg);
+  margin-left: 30px;
+}
+  
+.date-month {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.date-text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.full-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #fff;
+}
+
+.title {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 85px;
+  color: #fff;
+}
+
+.table {
+  width: 492px;
+  height: 143px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.text {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 145%;
+  margin-left: 24px;
+  margin-right: 25px;
+}
+
+.link {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.entry {
+  width: 316px;
+  height: 94px;
+  background-color: #000;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 34px;
+  margin-top: 50px;
+  border: 3px solid #000;
+}
+
+
+.entry:hover {
+  width: 316px;
+  height: 94px;
+  background-color: #FD88BC;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 34px;
+  margin-top: 50px;
+  border: 3px solid #000;
+}
+
+.programm {
+  width: 137px;
+  height: 47px;
+  background-color: #FD88BC;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 30px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.entry-text {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #fff;
+}
+
+.programm-text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #fff;
+}
+

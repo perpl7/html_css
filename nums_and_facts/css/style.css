@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+:root {
+  --ff: 'PT Sans', sans-serif;
+
+  --fw-n: 400;
+  --fw-b: 700;
+
+  --fs-p: 1rem;
+  --fs-2: 3.55rem;
+  --fs-3: 1.33rem;
+
+  --bg-clr-light: #F8F8F8;
+  --bg-clr-dark: #383838;
+  --f-clr-light: #FFF;
+  --f-clr-dark: #000;
+}
+
+.page {
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+  font-family: var(--ff);
+}
+
+.features {
+  --feature-gap: 2rem;
+
+  width: 100%;
+  padding: 5rem 2rem;
+  border-radius: 50px;
+  margin-top: 5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.features_digits {
+  --col-count: 4;
+}
+
+.features_principles {
+  --col-count: 5;
+}
+
+.features_color-light {
+  background-color: var(--bg-clr-light);
+  color: var(--f-clr-dark);
+}
+
+.features_color-dark {
+  background-color: var(--bg-clr-dark);
+  color: var(--f-clr-light);
+}
+
+.features__moon {
+  background-image: url("../images/moon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: -60px;
+  left: 60px;
+  width: 340px;
+  height: 340px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.features__title {
+  width: 60%;
+  margin-inline: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: var(--fs-2);
+  font-weight: var(--fw-b);
+  line-height: 1.125em;
+}
+
+.features__subtitle {
+  width: 60%;
+  margin-inline: auto;
+  margin-top: 0.75em;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: var(--fs-3);
+  font-weight: var(--fw-n);
+  line-height: 1.2em;
+}
+
+.features-items {
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--col-count), 1fr);
+  column-gap: var(--feature-gap);
+  row-gap: 3rem;
+}
+
+.features-items__title {
+  font-size: var(--fs-3);
+  line-height: 1.15em;
+  font-weight: var(--fw-b);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.features-items__text {
+  margin-top: 1em;
+  margin-bottom: 0;
+  line-height: 1.2em;
+}
+
+@media (max-width: 900px) {
+  .features_digits {
+    --col-count: 2;
+  }
+  .features_principles {
+    --col-count: 3;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --fs-2: 2rem;
+  }
+  .features_digits {
+    --col-count: 1;
+  }
+  .features_principles {
+    --col-count: 1;
+  }
+  .features__title {
+    width: 100%;
+  }
+  .features__subtitle {
+    margin-top: 0.3em;
+  }
+}

@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24;
+    color: #d2d2d2;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+.page {
+    width: min(100% - 2rem, 1200px);
+    background: rgb(2, 2, 8);
+    display: flex;
+    background-image: url(фон.png);
+    align-items: center;
+}
+
+header {
+    height: 78.3%;
+    padding-left: 120.38px;
+    top: 0px;
+}
+
+nav {
+    position: absolute;
+    width: 552.82px;
+    height: 32.6px;
+    top: 43px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-text {
+    font-weight: 400;
+    font-size: 19.6734px;
+    line-height: 24px;
+    letter-spacing: 0.045em;
+    z-index: 1;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #d2d2d2;
+}
+.nav-text:after {
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.nav-text:before {
+    -webkit-font-smoothing: antialiased;
+}
+.nav-text:hover {
+    color:rgb(164, 164, 164);
+    text-shadow: 1px 1px 1px #fff, 0 0 1em #fff;
+}
+.nav-text:active {
+    color:rgb(164, 164, 164);
+    text-shadow: 1px 1px 1px #fff, 0 0 1em #fff;
+}
+
+.block-contact-me {
+    display: flex;
+    padding-top: 34px;
+    margin-left: 930.55px;
+}
+.button-contact-me {
+    width: 239.03px;
+    height: 50.17px;
+    
+    background: linear-gradient(90deg, rgba(72, 7, 30, 0.98) 9.63%, rgba(3, 10, 72, 0.99) 85.36%);
+    border-radius: 60.0038px;
+    border-style: none;
+    
+    font-size: 19.6734px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+}
+
+.first-page_text {
+    width: 710.21px;
+    height: 475.11px;
+    padding-top: 56.35px;
+}
+
+.greeting {
+    width: 207.55px;
+    height: 29px;
+}
+h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23.608px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    
+    background: linear-gradient(90deg, #9f057e 27.38%, #20009e 72.75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+h1 {
+    width: 705.29px;
+    height: 192.8px;
+    margin-top: 36.91px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 94.4322px;
+    line-height: 101px;
+    letter-spacing: 0.02em;
+
+}
+.introduction {
+    width: 517.41px;
+    height: 116.07px;
+    margin-top: 100.33px;
+}
+
+.photos{
+    position: absolute;
+    top: 10px;
+    left: 541.77px;
+    display: flex;
+}
+.elippseinglasses {
+    position: absolute;
+    left: 520px;
+    top: 177px;
+    display: flex;
+    transform: translate3d(0, - 100%, 0);
+    animation: elippseinglasses 3s infinite linear;
+}
+.elippses {
+    position: absolute;
+    display: flex;
+    z-index: -1;
+    width: 831px;
+    height: 831px;
+}
+.man-image{
+    transform: translate3d(0, - 100%, 0);
+    animation: man 7s infinite linear;
+    width: 831px;
+    height: 831px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.13em;
+    color: #D6D9D6; 
+}
+
+.my-skills {
+    position: absolute;
+    width: 1006px;
+    height: 175px;
+    left: 211px;
+    top: 709px;
+}
+.skills {
+    height: 97px;
+    padding-top: 42px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.skill {
+    list-style-type: none;
+    text-align: center;
+    transition: 1s;
+}
+.ikon-skill {
+    transition: 0.4s;
+}
+.ikon-skill:hover {
+    transform: scale(1.3);
+}
+
+.my-works {
+    position: absolute;
+    width: 942px;
+    height: 595px;
+    left: 249px;
+    top: 1009px;
+}
+.block-works {
+    width: 942px;
+    height: 515px;
+    padding-top: 31px;
+    display: flex;
+}
+
+.side-sites {
+    width: 255px;
+    height: 453px;
+}
+.head-view-site {
+    position: relative;
+    width: 687px;
+    height: 453px; 
+    background-image: url(0.png);
+}
+
+.side-site-1:hover ~ .head-view-site {
+    background-image: url(0.png);
+}
+.side-site-2:hover ~ .head-view-site {
+    background-image: url(0-1.png);
+}
+.side-site-3:hover ~ .head-view-site {
+    background-image: url(0-2.png);
+}
+
+.go-to-site {
+    position: absolute;
+    height: 24px;
+    padding-top: 480px;
+    padding-left: 365px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.065em;
+    
+    color: #FFFFFF;
+}
+
+.about-me {
+    position: absolute;
+    width: 997px;
+    height: 397px;
+    left: 221px;
+    top: 1732px;    
+}
+.block-about-me {
+    justify-content: center;
+    display: flex;
+    margin-top: 43px;
+    width: 997px;
+    height: 292.22px;
+
+    background: #0A0A0A;
+    box-shadow: 0px 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+.text-about-me {
+    margin-top: 81px;
+    width: 906px;
+    height: 143px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.13em;
+    text-align: center;
+    
+    color: #DCDCDC;
+}
+
+.requests {
+    position: absolute;
+    width: 332px;
+    height: 581.76px;
+    left: 553px;
+    top: 2205px;
+}
+.input-block {
+    width: 332px;
+    height:  280px;
+    padding-top: 60px;
+}
+
+.block-leave-a-requests {
+    width: 332px;
+    height: 50px;
+    background: #757575;
+    box-shadow: inset 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+
+
+    box-sizing: border-box;
+    padding-left: 10px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.065em;
+    
+    color: #f9f9f9;
+}
+.button-send-form {
+    position: absolute;
+    width: 251px;
+    height: 75px;
+    left: calc(50% - 251px/2 - 1.5px);
+    margin-top: 64px;
+
+    background: linear-gradient(90deg, rgba(92, 4, 102, 0.98) 9.63%, rgba(3, 10, 72, 0.99) 85.36%);
+    border-radius: 2px;
+    border-style: none;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.065em;
+    color: #cdcdcd;
+    cursor: pointer;
+    transition: 0.01s;
+}
+
+.button-send-form:before, .button-contact-me:before{
+    content: '';
+    background: linear-gradient(45deg, #6804c7, #001b88, #ac1b87, #660da1);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+.button-send-form:active, .button-contact-me:active {
+    color: #000
+}
+.button-send-form:active:after, .button-contact-me:active:after {
+    background: transparent;
+}
+.button-send-form:hover:before, .button-contact-me:hover:before {
+    opacity: 1;
+}
+.button-send-form:after, .button-contact-me:after{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+}
+
+.block-my-contacts {
+    justify-content: space-between;
+    display: flex;
+
+    position: absolute;
+    z-index: -1;
+    width: 175.66px;
+    height: 38.3;
+    padding-top: 243.45px;
+    padding-left: 79px;
+}
+.ikon-contact {
+    padding-right: 29.79px;
+}
+
+.btn {
+    position: absolute;
+    width: 155.04px;
+    height: 159.19px;
+    left: 1080px;
+    top: 974.51px;
+}
+.star {
+    position: absolute;
+    width: 107px;
+    height: 107px;
+    left: 417px;
+    top: 1706px;
+}
+.pencil {
+    position: absolute;
+    width: 240.25px;
+    height: 240.25px;
+    left: 929.55px;
+    top: 2205px;
+}
+
+
+@keyframes elippseinglasses{
+    0% {
+        transform: translate3d(0, -10%, 0);
+    }
+    50% {
+        transform: translate3d(0, 10%, 0);
+    }
+    100% {
+        transform: translate3d(0, -10%, 0);
+    }
+}
+@keyframes man{
+    0% {
+        transform: translate3d(0, -1%, 0);
+    }
+    50% {
+        transform: translate3d(0, 1%, 0);
+    }
+    100% {
+        transform: translate3d(0, -1%, 0);
+    }
+}
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+@media only screen and (max-width: 767px) { 
+    .block-contact-me {
+        margin-left: 30px;
+        padding-top: 100px;
+    }
+    .button-contact-me {
+        width: 250px;
+        height: 50.17px;
+        font-size: 18px;
+    }
+    nav {
+        left: 80px;
+        width: 400px;
+    }
+    .nav-text {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .first-page_text {
+        padding-top: 20px;
+    }
+    .greeting {
+        text-align: center;
+        padding-left: 70px;
+        width: 250px;
+        font-size: 20px;
+    }
+    .introduction {
+        margin-top: 10px;
+        width: 400px;
+        height: 100px;
+        margin-left: -40.33px;
+        text-align: center;
+    }
+    h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .photos{
+        left: 23px;
+        top: 430px;
+    }
+    .elippses {
+        width: 500px;
+        height: 500px;
+    }
+    .man-image{
+        width: 500px;
+        height: 500px;
+    }
+    .elippseinglasses {
+        left: 420px;
+        top: 100px;
+    }
+    h1 {
+        font-size: 40px;
+        width: 300px;
+        line-height: 40px;
+        text-align: center;
+        height: 100px;
+        margin-left: 10px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .my-skills {
+        width: 500px;
+        left: 25px; 
+        top: 900px;
+    }
+    .skill {
+        font-size: 16px;
+    }    
+    .my-works {
+        width: 500px;
+        left: 30px; 
+        top: 1170px;
+    }
+    .side-sites {
+        padding-left: 120px;
+    }
+    .head-view-site {
+        display: none;
+    }
+    .go-to-site {
+        position: absolute;
+        height: 28px;
+        padding-top: 460px;
+        padding-left: 180px;
+        font-size: 12px;
+    }
+    .about-me {
+        left: 25px;
+        top: 1800px;   
+        width: 500px;
+    }
+    .text-about-me {
+        margin-top: 31px;
+    }
+    .block-about-me {
+        width: 500px;
+        height: 230px;
+    }
+    .text-about-me {
+        font-size: 16px;
+        width: 400px;
+        height: 243px;
+        line-height: 20px;
+    }
+    .requests {
+        left: 110px;
+        top: 2200px;
+    }
+    .block-leave-a-requests {
+        font-size: 16px;
+    }
+    .button-send-form {
+        width: 201px;
+        height: 55px;
+        left: 70px;
+        font-size: 18px;
+        margin-top:25px;
+    }
+    .pencil {
+        display: none;
+    }
+    .btn {
+        display: none;
+    }
+    .star {
+        display: none;
+    }
+    .block-my-contacts {
+        padding-top: 200px;
+    }
+}
